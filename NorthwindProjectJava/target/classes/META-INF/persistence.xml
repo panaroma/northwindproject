@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+	<persistence-unit name="northwindx">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+		    <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=NorthwindTwo;"></property>
+		    <property name="javax.persistence.jdbc.user" value="sa"></property>
+		    <property name="javax.persistence.jdbc.password" value="P@ssword"></property>
+		    <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"></property>
+	    </properties>
+	</persistence-unit>
+</persistence>
